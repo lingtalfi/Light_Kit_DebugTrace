@@ -113,6 +113,10 @@ $events.methods_collection:
 History Log
 =============
 
+- 1.0.1 -- 2021-07-08
+
+    - fix service returning typo in kit_conf key 
+  
 - 1.0.0 -- 2021-07-08
 
     - initial commit

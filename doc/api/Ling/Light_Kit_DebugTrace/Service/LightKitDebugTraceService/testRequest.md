@@ -50,7 +50,7 @@ Returns bool.
 
 Source Code
 ===========
-See the source code for method [LightKitDebugTraceService::testRequest](https://github.com/lingtalfi/Light_Kit_DebugTrace/blob/master/Service/LightKitDebugTraceService.php#L347-L363)
+See the source code for method [LightKitDebugTraceService::testRequest](https://github.com/lingtalfi/Light_Kit_DebugTrace/blob/master/Service/LightKitDebugTraceService.php#L357-L373)
 
 
 See Also

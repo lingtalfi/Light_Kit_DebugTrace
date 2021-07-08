@@ -12,6 +12,7 @@ use Ling\Light\Events\LightEvent;
 use Ling\Light\Http\HttpRequestInterface;
 use Ling\Light\ServiceContainer\LightServiceContainerInterface;
 use Ling\Light_CsrfSession\Service\LightCsrfSessionService;
+use Ling\Light_CsrfSimple\Service\LightCsrfSimpleService;
 use Ling\Light_Events\Service\LightEventsService;
 use Ling\Light_Kit_DebugTrace\Exception\LightKitDebugTraceException;
 
@@ -52,6 +53,7 @@ class LightKitDebugTraceService
      * @var array
      */
     protected array $httpRequestFilters;
+
 
     /**
      * This property holds the _isAcceptedRequest for this instance.
@@ -116,7 +118,15 @@ class LightKitDebugTraceService
                  */
                 $csrfService = $this->container->get("csrf_session");
                 $info["csrf_token"] = $csrfService->getToken();
-
+            } elseif ($this->container->has('csrf_simple')) {
+                /**
+                 * @var $csrfSimple LightCsrfSimpleService
+                 */
+                $csrfSimple = $this->container->get("csrf_simple");
+                $info["csrf_token"] = [
+                    'old' => $csrfSimple->getOldToken(),
+                    'new' => $csrfSimple->getToken(),
+                ];
             }
 
             $this->appendSection($info);
@@ -169,7 +179,7 @@ class LightKitDebugTraceService
                 'layout' => $conf['layout'],
                 'zones' => $myZones,
             ];
-            $this->appendSection(["kit_admin_conf" => $compactConf]);
+            $this->appendSection(["kit_conf" => $compactConf]);
         }
     }
 

@@ -46,7 +46,7 @@ Returns bool.
 
 Source Code
 ===========
-See the source code for method [LightKitDebugTraceService::isAcceptedRequest](https://github.com/lingtalfi/Light_Kit_DebugTrace/blob/master/Service/LightKitDebugTraceService.php#L369-L372)
+See the source code for method [LightKitDebugTraceService::isAcceptedRequest](https://github.com/lingtalfi/Light_Kit_DebugTrace/blob/master/Service/LightKitDebugTraceService.php#L379-L382)
 
 
 See Also

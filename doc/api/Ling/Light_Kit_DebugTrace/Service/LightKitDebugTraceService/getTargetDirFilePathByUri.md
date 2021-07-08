@@ -56,7 +56,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [LightKitDebugTraceService::getTargetDirFilePathByUri](https://github.com/lingtalfi/Light_Kit_DebugTrace/blob/master/Service/LightKitDebugTraceService.php#L217-L237)
+See the source code for method [LightKitDebugTraceService::getTargetDirFilePathByUri](https://github.com/lingtalfi/Light_Kit_DebugTrace/blob/master/Service/LightKitDebugTraceService.php#L227-L247)
 
 
 See Also

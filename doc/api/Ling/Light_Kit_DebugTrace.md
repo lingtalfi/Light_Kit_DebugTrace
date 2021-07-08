@@ -28,6 +28,7 @@ Dependencies
 - [Bat](https://github.com/lingtalfi/Bat)
 - [Light](https://github.com/lingtalfi/Light)
 - [Light_CsrfSession](https://github.com/lingtalfi/Light_CsrfSession)
+- [Light_CsrfSimple](https://github.com/lingtalfi/Light_CsrfSimple)
 - [Light_Events](https://github.com/lingtalfi/Light_Events)
 
 
