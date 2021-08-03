@@ -50,7 +50,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [LightKitDebugTraceService::resetFile](https://github.com/lingtalfi/Light_Kit_DebugTrace/blob/master/Service/LightKitDebugTraceService.php#L334-L347)
+See the source code for method [LightKitDebugTraceService::resetFile](https://github.com/lingtalfi/Light_Kit_DebugTrace/blob/master/Service/LightKitDebugTraceService.php#L356-L369)
 
 
 See Also

@@ -49,7 +49,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [LightKitDebugTraceService::setContainer](https://github.com/lingtalfi/Light_Kit_DebugTrace/blob/master/Service/LightKitDebugTraceService.php#L257-L260)
+See the source code for method [LightKitDebugTraceService::setContainer](https://github.com/lingtalfi/Light_Kit_DebugTrace/blob/master/Service/LightKitDebugTraceService.php#L279-L282)
 
 
 See Also

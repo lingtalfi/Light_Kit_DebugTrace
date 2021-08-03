@@ -49,7 +49,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [LightKitDebugTraceService::setHttpRequestFilters](https://github.com/lingtalfi/Light_Kit_DebugTrace/blob/master/Service/LightKitDebugTraceService.php#L289-L292)
+See the source code for method [LightKitDebugTraceService::setHttpRequestFilters](https://github.com/lingtalfi/Light_Kit_DebugTrace/blob/master/Service/LightKitDebugTraceService.php#L311-L314)
 
 
 See Also

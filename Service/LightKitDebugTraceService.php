@@ -166,11 +166,28 @@ class LightKitDebugTraceService
             $myZones = [];
             foreach ($zones as $name => $widgets) {
                 foreach ($widgets as $widget) {
-                    $myZones[$name][] = [
+                    $arr = [
                         "name" => $widget['name'],
-                        "className" => $widget['className'] . " (" . $widget['type'] . ")",
-                        "widgetFile" => $widget['widgetDir'] . "/templates/" . $widget['template'],
+                        "type" => $widget['type'],
                     ];
+
+                    if (true === array_key_exists("id", $widget)) {
+                        $arr['id'] = $widget['id'];
+                    }
+
+                    if('picasso' === $widget['type']){
+                        $arr["className"] = $widget['className'];
+                        $arr["widgetFile"] = $widget['widgetDir'] . "/templates/" . $widget['template'];
+                    }
+                    elseif('prototype' === $widget['type']){
+                        $arr["widgetFile"] = $widget['template'];
+                    }
+
+
+
+
+
+                    $myZones[$name][] = $arr;
                 }
             }
 
@@ -179,6 +196,11 @@ class LightKitDebugTraceService
                 'layout' => $conf['layout'],
                 'zones' => $myZones,
             ];
+
+            if (true === array_key_exists("_babyYamlPage", $conf)) {
+                $compactConf['babyYamlPage'] = $conf['_babyYamlPage'];
+            }
+
             $this->appendSection(["kit_conf" => $compactConf]);
         }
     }

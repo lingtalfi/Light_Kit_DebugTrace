@@ -1,6 +1,6 @@
 Light_Kit_DebugTrace
 ===========
-2021-07-08
+2021-07-08 -> 2021-08-03
 
 
 
@@ -113,6 +113,10 @@ $events.methods_collection:
 History Log
 =============
 
+- 1.0.2 -- 2021-08-03
+
+    - update service->onKitPageConfReady, adding babyYamlPage property when available
+  
 - 1.0.1 -- 2021-07-08
 
     - fix service returning typo in kit_conf key 
